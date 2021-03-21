@@ -1,0 +1,12 @@
+<?php
+function firstsubtheme_preprocess_page(&$variables){
+ $node = \Drupal::request()->attributes->get('node');
+ if (!is_null($node)) {
+   $uid = $node->getOwnerId();
+   $user = \Drupal\user\Entity\User::load($uid);
+  if (!is_null($user))
+   { $username = $user->getDisplayName();
+    $variables['username'] = $username;
+ } }
+}
+?>

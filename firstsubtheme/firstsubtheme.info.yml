@@ -1,0 +1,20 @@
+name: subtheme1
+description: 'My first sub theme.'
+package: Custom
+base theme: bartik
+type: theme
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - firstsubtheme/global-styling
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+  myregion: "NewRegion"
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer fifth'
